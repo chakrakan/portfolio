@@ -4,9 +4,9 @@ import styled from "styled-components"
 import { Caption2, SmallText } from "../styles/TextStyles"
 
 export default function BasicButton(props) {
-  const { icon, title, subtitle } = props
+  const { icon, title, subtitle, link } = props
   return (
-    <StyledLink to="/projects">
+    <StyledLink to={link}>
       <Wrapper>
         <IconWrapper>
           <Icon src={icon} className="icon" />
@@ -22,7 +22,7 @@ export default function BasicButton(props) {
 }
 
 const StyledLink = styled(GatsbyLink)`
-  width: 230px;
+  width: auto;
 `
 
 const Wrapper = styled.div`

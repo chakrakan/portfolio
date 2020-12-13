@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   position: relative;
   perspective: 5000;
   top: -30px;
-  left: 50px;
+  left: 90px;
   perspective-origin: left bottom;
   transform-style: flat;
 

@@ -1,12 +1,40 @@
-import React from "react"
+import React, { useState, useRef, useEffect } from "react"
 import styled, { keyframes } from "styled-components"
 import MockupAnimation from "../animations/MockupAnimation"
 import IntroWaveBackground from "../backgrounds/IntroWaveBackground"
-import BasicButton from "../buttons/BasicButton"
 import { themes } from "../styles/ColorStyles"
 import { BodyMain, H1 } from "../styles/TextStyles"
+import { menuData } from "../../data/menuData"
+import MenuButton from "../buttons/MenuButton"
+import MenuTooltip from "../tooltips/MenuTooltip"
 
 export default function MainHeroSection() {
+  const [isOpen, setIsOpen] = useState(false)
+  const ref = useRef()
+  const tooltipRef = useRef()
+
+  function handleClick(event) {
+    setIsOpen(!isOpen)
+    event.preventDefault()
+  }
+
+  function handleClickOutside(event) {
+    if (
+      ref.current &&
+      !ref.current.contains(event.target) &&
+      !tooltipRef.current.contains(event.target)
+    ) {
+      setIsOpen(false)
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [])
+
   return (
     <>
       <Wrapper>
@@ -22,12 +50,25 @@ export default function MainHeroSection() {
               for a workplace to grow together with.
               <br />
               <br />I enjoy programming, teaching, drawing, and making music.
-              You can browse through to see what I've been upto!
             </Description>
-            <BasicButton
-              icon="/images/icons/team.svg"
-              title="Check out my work!"
-            />
+            <MenuWrapper count={menuData.length}>
+              {menuData.map(item => (
+                <MenuButton item={item} />
+              ))}
+              <HamburgerWrapper>
+                <MenuButton
+                  item={{
+                    title: "",
+                    icon: "/images/icons/hamburger.svg",
+                    link: "/",
+                  }}
+                  onClick={event => handleClick(event)}
+                />
+              </HamburgerWrapper>
+            </MenuWrapper>
+            <div ref={tooltipRef}>
+              <MenuTooltip isOpen={isOpen} />
+            </div>
           </TextWrapper>
           <MockupAnimation />
         </ContentWrapper>
@@ -50,7 +91,7 @@ const Wrapper = styled.div`
 const ContentWrapper = styled.div`
   max-width: 1234px;
   margin: 0 auto;
-  padding: 250px 30px;
+  padding: 150px 30px;
   display: grid;
   grid-template-columns: 360px auto;
 
@@ -82,15 +123,37 @@ const TextWrapper = styled.div`
   }
 `
 
+const MenuWrapper = styled.div`
+  display: grid;
+  margin-top: 120px;
+  margin-left: 50px;
+  gap: 30px;
+  grid-template-columns: repeat(${props => props.count}, auto);
+
+  @media (max-width: 768px) {
+    > a {
+      display: none;
+    }
+    grid-template-columns: auto;
+  }
+`
+
+const HamburgerWrapper = styled.div`
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+`
+
 const Title = styled(H1)`
   color: ${themes.dark.text1};
-  background: linear-gradient(180deg, #730040 0%, #301cbe 100%);
+  background: linear-gradient(180deg, #5e46bf 0%, #84f6d5 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 
   span {
-    background: linear-gradient(180deg, #ffd7ff 0%, #ffb6ff 100%);
+    background: linear-gradient(180deg, #fff 0%, #ffb6ff 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -101,4 +164,6 @@ const Title = styled(H1)`
   }
 `
 
-const Description = styled(BodyMain)``
+const Description = styled(BodyMain)`
+  width: 300px;
+`

@@ -52,8 +52,8 @@ const Background = styled.div`
   position: absolute;
   background: linear-gradient(
     189.16deg,
-    rgb(67, 22, 119) 13.57%,
-    rgb(144, 118, 231) 98.38%
+    rgb(27, 22, 119) 13.57%,
+    rgb(34, 118, 231) 98.38%
   );
   width: 100%;
   height: 890px;
