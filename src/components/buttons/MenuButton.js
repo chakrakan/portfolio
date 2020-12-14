@@ -7,7 +7,7 @@ export default function MenuButton(props) {
   return (
     <Link to={item.link} onClick={props.onClick}>
       <MenuItem title={item.title}>
-        <img src={item.icon} alt={item.title} />
+        <img src={item.icon} alt={item.title} height="25px" width="25px" />
         {item.title}
       </MenuItem>
     </Link>

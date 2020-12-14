@@ -5,7 +5,7 @@ import { menuData } from "../../data/menuData"
 import MenuButton from "../buttons/MenuButton"
 import MenuTooltip from "../tooltips/MenuTooltip"
 
-export default function Header() {
+export default function Menu() {
   const [isOpen, setIsOpen] = useState(false)
   const ref = useRef()
   const tooltipRef = useRef()
@@ -34,9 +34,6 @@ export default function Header() {
 
   return (
     <Wrapper>
-      <Link to="/">
-        <img src="/images/logos/logo.svg" alt="Logo" />
-      </Link>
       <MenuWrapper count={menuData.length} ref={ref}>
         {menuData.map((item, index) => (
           <MenuButton item={item} key={index} />
@@ -61,7 +58,7 @@ export default function Header() {
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 60px;
+  top: 50px;
   display: grid;
   grid-template-columns: 44px auto;
   width: 100%;

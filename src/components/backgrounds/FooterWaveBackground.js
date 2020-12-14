@@ -4,8 +4,6 @@ import styled from "styled-components"
 export default function FooterWaveBackground() {
   return (
     <Wrapper>
-      {/* <Wave src="/images/waves/footer-wave1.svg" style={{ top: "100px" }} />
-      <Wave src="/images/waves/footer-wave2.svg" style={{ top: "150px" }} /> */}
       <BottomWave src="/images/waves/footer-wave3.svg" style={{ top: "0px" }} />
     </Wrapper>
   )

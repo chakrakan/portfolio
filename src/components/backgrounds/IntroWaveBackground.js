@@ -6,7 +6,7 @@ export default function IntroWaveBackground() {
     <Wrapper>
       <Background />
       <StarWave src="/images/waves/stars.svg" style={{ top: "0px" }} />
-      <Wave src="/images/waves/intro-wave1.svg" style={{ top: "137px" }} />
+      <Wave src="/images/waves/intro-wave1.svg" style={{ top: "0px" }} />
       <Wave
         src="/images/waves/intro-wave2.svg"
         style={{
@@ -15,7 +15,7 @@ export default function IntroWaveBackground() {
       />
       <BottomWave
         src="/images/waves/intro-wave3.svg"
-        style={{ top: "670px" }}
+        style={{ top: "580px" }}
       />
     </Wrapper>
   )

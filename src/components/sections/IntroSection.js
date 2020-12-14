@@ -2,9 +2,9 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import MockupAnimation from "../animations/MockupAnimation"
 import IntroWaveBackground from "../backgrounds/IntroWaveBackground"
-import BasicButton from "../buttons/BasicButton"
+import Menu from "../layout/Menu"
 import { themes } from "../styles/ColorStyles"
-import { BodyMain, H1 } from "../styles/TextStyles"
+import { BodyIntro, H1 } from "../styles/TextStyles"
 
 export default function MainHeroSection() {
   return (
@@ -22,12 +22,8 @@ export default function MainHeroSection() {
               for a workplace to grow together with.
               <br />
               <br />I enjoy programming, teaching, drawing, and making music.
-              You can browse through to see what I've been upto!
             </Description>
-            <BasicButton
-              icon="/images/icons/team.svg"
-              title="Check out my work!"
-            />
+            <Menu />
           </TextWrapper>
           <MockupAnimation />
         </ContentWrapper>
@@ -50,7 +46,7 @@ const Wrapper = styled.div`
 const ContentWrapper = styled.div`
   max-width: 1234px;
   margin: 0 auto;
-  padding: 250px 30px;
+  padding: 200px 30px;
   display: grid;
   grid-template-columns: 360px auto;
 
@@ -101,4 +97,4 @@ const Title = styled(H1)`
   }
 `
 
-const Description = styled(BodyMain)``
+const Description = styled(BodyIntro)``
