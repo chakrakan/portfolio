@@ -1,10 +1,14 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 export default function FooterWaveBackground() {
   return (
     <Wrapper>
-      <BottomWave src="/images/waves/footer-wave3.svg" style={{ top: "0px" }} />
+      <BottomWave
+        alt="footer-wave3"
+        src="/images/waves/footer-wave3.svg"
+        style={{ top: '0px' }}
+      />
     </Wrapper>
   )
 }
@@ -23,6 +27,6 @@ const Wave = styled.img`
 
 const BottomWave = styled(Wave)`
   @media (prefers-color-scheme: dark) {
-    content: url("/images/waves/intro-wave3-dark.svg");
+    content: url('/images/waves/intro-wave3-dark.svg');
   }
 `

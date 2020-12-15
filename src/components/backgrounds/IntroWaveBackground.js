@@ -1,21 +1,31 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 export default function IntroWaveBackground() {
   return (
     <Wrapper>
       <Background />
-      <StarWave src="/images/waves/stars.svg" style={{ top: "0px" }} />
-      <Wave src="/images/waves/intro-wave1.svg" style={{ top: "0px" }} />
+      <StarWave
+        src="/images/waves/stars.svg"
+        style={{ top: '0px' }}
+        alt="starwave"
+      />
+      <Wave
+        src="/images/waves/intro-wave1.svg"
+        style={{ top: '0px' }}
+        alt="wave1"
+      />
       <Wave
         src="/images/waves/intro-wave2.svg"
         style={{
-          top: "380px",
+          top: '380px',
         }}
+        alt="wave2"
       />
       <BottomWave
         src="/images/waves/intro-wave3.svg"
-        style={{ top: "580px" }}
+        style={{ top: '580px' }}
+        alt="wave3"
       />
     </Wrapper>
   )
@@ -44,7 +54,7 @@ const Wave = styled.img`
 
 const BottomWave = styled(Wave)`
   @media (prefers-color-scheme: dark) {
-    content: url("/images/waves/intro-wave3-dark.svg");
+    content: url('/images/waves/intro-wave3-dark.svg');
   }
 `
 

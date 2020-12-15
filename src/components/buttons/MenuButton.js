@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default function MenuButton(props) {
   const { item } = props
   return (
-    <a href={item.link} onClick={props.onClick} target="_blank">
+    <a href={item.link} onClick={props.onClick} target="_blank" rel="noopener">
       <MenuItem title={item.title}>
         <img src={item.icon} alt={item.title} height="25px" width="25px" />
         {item.title}
