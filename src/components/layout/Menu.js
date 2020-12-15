@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { menuData } from "../../data/menuData"
 import MenuButton from "../buttons/MenuButton"
