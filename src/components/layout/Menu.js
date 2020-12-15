@@ -61,7 +61,7 @@ const Wrapper = styled.div`
   top: 50px;
   display: grid;
   grid-template-columns: 44px auto;
-  width: 100%;
+  max-width: 90vw;
   justify-content: space-between;
   padding: 0 30px;
   align-items: center;
@@ -79,7 +79,7 @@ const MenuWrapper = styled.div`
   gap: 30px;
   grid-template-columns: repeat(${props => props.count}, auto);
 
-  @media (max-width: 768px) {
+  @media (max-width: 1150px) {
     > a {
       display: none;
     }
@@ -89,7 +89,7 @@ const MenuWrapper = styled.div`
 
 const HamburgerWrapper = styled.div`
   display: none;
-  @media (max-width: 768px) {
+  @media (max-width: 1150px) {
     display: block;
   }
 `

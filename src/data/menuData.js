@@ -27,7 +27,13 @@ export const menuData = [
   {
     title: "Resume",
     icon: "/images/icons/file.svg",
-    link: "/assets/Kanisk_CV_2020.pdf",
+    link:
+      "https://drive.google.com/file/d/1iZSVaDlRuH9M2yRx7LjmT-aloS8T6GXS/view?usp=sharing",
+  },
+  {
+    title: "LinkedIn",
+    icon: "/images/icons/linkedin2.png",
+    link: "https://www.linkedin.com/in/kaniskc/",
   },
   {
     title: "Contact",

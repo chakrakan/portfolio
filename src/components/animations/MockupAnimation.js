@@ -20,13 +20,13 @@ export default function MockupAnimation() {
 const Wrapper = styled.div`
   position: relative;
   perspective: 5000;
-  top: 0px;
-  left: 80px;
+  top: 10px;
+  left: 100px;
   perspective-origin: left bottom;
   transform-style: flat;
 
   @media (max-width: 768px) {
-    transform: scale(0.6);
+    transform: scale(0.7);
     transform-origin: top left;
   }
   @media (max-width: 450px) {

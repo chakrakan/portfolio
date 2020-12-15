@@ -24,7 +24,10 @@ export default function FooterSection() {
 }
 
 const StyledLink = styled.a`
-  color: white;
+  color: ${themes.light.text1};
+  @media (prefers-color-scheme: dark) {
+    color: ${themes.dark.text1};
+  }
 `
 
 const animation = keyframes`

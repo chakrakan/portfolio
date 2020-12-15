@@ -4,7 +4,7 @@ import MockupAnimation from "../animations/MockupAnimation"
 import IntroWaveBackground from "../backgrounds/IntroWaveBackground"
 import Menu from "../layout/Menu"
 import { themes } from "../styles/ColorStyles"
-import { BodyIntro, H1 } from "../styles/TextStyles"
+import { BodyMain, H1 } from "../styles/TextStyles"
 
 export default function MainHeroSection() {
   return (
@@ -22,6 +22,10 @@ export default function MainHeroSection() {
               for a workplace to grow together with.
               <br />
               <br />I enjoy programming, teaching, drawing, and making music.
+              <br />
+              <br />
+              You can find out more about me and my work by checking out the
+              links above!
             </Description>
             <Menu />
           </TextWrapper>
@@ -40,13 +44,13 @@ const animation = keyframes`
 const Wrapper = styled.div`
   /* background: linear-gradient(180deg, #4316db 0%, #9076e7 100%); */
   overflow: hidden;
-  height: 890px;
+  height: 850px;
 `
 
 const ContentWrapper = styled.div`
   max-width: 1234px;
   margin: 0 auto;
-  padding: 200px 30px;
+  padding: 170px 30px;
   display: grid;
   grid-template-columns: 360px auto;
 
@@ -97,4 +101,4 @@ const Title = styled(H1)`
   }
 `
 
-const Description = styled(BodyIntro)``
+const Description = styled(BodyMain)``
