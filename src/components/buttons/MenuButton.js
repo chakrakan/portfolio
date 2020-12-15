@@ -4,14 +4,25 @@ import styled from "styled-components"
 
 export default function MenuButton(props) {
   const { item } = props
-  return (
-    <Link to={item.link} onClick={props.onClick}>
-      <MenuItem title={item.title}>
-        <img src={item.icon} alt={item.title} height="25px" width="25px" />
-        {item.title}
-      </MenuItem>
-    </Link>
-  )
+  if (item.title === "Contact") {
+    return (
+      <a href={item.link} onClick={props.onClick}>
+        <MenuItem title={item.title}>
+          <img src={item.icon} alt={item.title} height="25px" width="25px" />
+          {item.title}
+        </MenuItem>
+      </a>
+    )
+  } else {
+    return (
+      <Link to={item.link} onClick={props.onClick}>
+        <MenuItem title={item.title}>
+          <img src={item.icon} alt={item.title} height="25px" width="25px" />
+          {item.title}
+        </MenuItem>
+      </Link>
+    )
+  }
 }
 
 const MenuItem = styled.div`
