@@ -11,7 +11,11 @@ export default function FooterSection() {
           <TextWrapper>
             <FooterText>
               Site made by{" "}
-              <StyledLink target="_blank" href="https://github.com/chakrakan">
+              <StyledLink
+                target="_blank"
+                href="https://github.com/chakrakan"
+                rel="noopener"
+              >
                 @chakrakan
               </StyledLink>
               .
