@@ -5,6 +5,22 @@ export const menuData = [
     link: 'https://github.com/chakrakan',
   },
   {
+    title: 'Blog',
+    icon: '/images/icons/tutorials.svg',
+    link: 'https://dev.to/chakrakan',
+  },
+  {
+    title: 'LinkedIn',
+    icon: '/images/icons/linkedin2.png',
+    link: 'https://www.linkedin.com/in/kaniskc/',
+  },
+  {
+    title: 'Certificates',
+    icon: '/images/icons/awards.png',
+    link:
+      'https://drive.google.com/drive/folders/1ZMazzyoZc7yiG2bAotDBq7Vi-HWo6P9F?usp=sharing',
+  },
+  {
     title: 'Artwork',
     icon: '/images/icons/pen.svg',
     link: 'https://www.deviantart.com/kaniskc',
@@ -15,11 +31,6 @@ export const menuData = [
     link: 'https://gist.github.com/chakrakan/d95b4ebd7791be7264513a2ba7440c2d',
   },
   {
-    title: 'Blog',
-    icon: '/images/icons/tutorials.svg',
-    link: 'https://dev.to/chakrakan',
-  },
-  {
     title: 'Twitter',
     icon: '/images/icons/twitter.svg',
     link: 'https://twitter.com/chakra_kan',
@@ -28,12 +39,7 @@ export const menuData = [
     title: 'Resume',
     icon: '/images/icons/file.svg',
     link:
-      'https://drive.google.com/file/d/1JNPWJu5khTJ7PHzlw0WNJuZ-CXdANixZ/view?usp=sharing',
-  },
-  {
-    title: 'LinkedIn',
-    icon: '/images/icons/linkedin2.png',
-    link: 'https://www.linkedin.com/in/kaniskc/',
+      'https://drive.google.com/file/d/1GmObFathulOIO2o_AauOBCe8HZEQxJMu/view?usp=sharing',
   },
   {
     title: 'Contact',
