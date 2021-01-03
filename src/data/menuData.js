@@ -16,7 +16,7 @@ export const menuData = [
   },
   {
     title: 'Certificates',
-    icon: '/images/icons/awards.png',
+    icon: '/images/icons/award.svg',
     link:
       'https://drive.google.com/drive/folders/1ZMazzyoZc7yiG2bAotDBq7Vi-HWo6P9F?usp=sharing',
   },
