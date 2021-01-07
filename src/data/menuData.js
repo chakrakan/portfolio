@@ -18,7 +18,7 @@ export const menuData = [
     title: 'Certificates',
     icon: '/images/icons/award.svg',
     link:
-      'https://drive.google.com/drive/folders/1ZMazzyoZc7yiG2bAotDBq7Vi-HWo6P9F?usp=sharing',
+      'https://drive.google.com/file/d/1mWmRPHTHpDmdehSpprcqKoJ5JVGtp-YT/view?usp=sharing',
   },
   {
     title: 'Artwork',
