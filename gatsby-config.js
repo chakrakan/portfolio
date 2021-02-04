@@ -8,7 +8,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'G-FR2RPSQVM2',
+        trackingId: 'UA-188933393-1',
+        head: true,
+        pageTransitionDelay: 0,
       },
     },
     `gatsby-plugin-react-helmet`,
