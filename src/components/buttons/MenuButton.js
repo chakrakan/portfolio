@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 export default function MenuButton(props) {
   const { item } = props
   return (
-    <a
+    <OutboundLink
       href={item.link}
       onClick={props.onClick}
       target="_blank"
@@ -14,7 +15,7 @@ export default function MenuButton(props) {
         <img src={item.icon} alt={item.title} height="25px" width="25px" />
         {item.title}
       </MenuItem>
-    </a>
+    </OutboundLink>
   )
 }
 
