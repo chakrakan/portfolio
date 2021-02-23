@@ -1,10 +1,10 @@
-import React from "react"
-import styled, { keyframes } from "styled-components"
-import MockupAnimation from "../animations/MockupAnimation"
-import IntroWaveBackground from "../backgrounds/IntroWaveBackground"
-import Menu from "../layout/Menu"
-import { themes } from "../styles/ColorStyles"
-import { BodyMain, H1 } from "../styles/TextStyles"
+import React from 'react'
+import styled, { keyframes } from 'styled-components'
+import MockupAnimation from '../animations/MockupAnimation'
+import IntroWaveBackground from '../backgrounds/IntroWaveBackground'
+import Menu from '../layout/Menu'
+import { themes } from '../styles/ColorStyles'
+import { BodyMain, H1 } from '../styles/TextStyles'
 
 export default function MainHeroSection() {
   return (
@@ -18,8 +18,7 @@ export default function MainHeroSection() {
               <br /> I'm <span>Kanisk</span>
             </Title>
             <Description>
-              A recent software engineering graduate, currently on the lookout
-              for a workplace to grow together with.
+              A Toronto based Software Engineer.
               <br />
               <br />I enjoy programming, teaching, drawing, and making music.
               <br />
