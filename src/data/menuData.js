@@ -39,7 +39,7 @@ export const menuData = [
     title: 'Resume',
     icon: '/images/icons/file.svg',
     link:
-      'https://drive.google.com/file/d/1W4UHWnnTShih7UH5FEva-_wBwYYEbPXM/view?usp=sharing',
+      'https://drive.google.com/file/d/1ywRJtEWHfLXCNa8UktxoPc_b_eFX5C-6/view?usp=sharing',
   },
   {
     title: 'Contact',
