@@ -9,7 +9,7 @@
     "url": "https://kanisk.live/"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "1.13.1",
+    "babel-plugin-styled-components": "1.13.2",
     "gatsby": "3.8.1",
     "gatsby-image": "3.8.0",
     "gatsby-plugin-google-analytics": "3.8.0",
