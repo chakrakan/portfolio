@@ -7,4 +7,6 @@
   My Portfolio
 </h1>
 
-Built on top of the Gatsby React Starter using React and Styled Components, deployed to DigitalOcean.
+Old portfolio which was built on top of the Gatsby React Starter using React and Styled Components, and deployed to DigitalOcean from the `target` branch
+
+### Visual
